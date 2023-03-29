@@ -24,14 +24,13 @@ export const reducer = (state = initialState, action)=>{
         case select: {
             
             if(action.isSelect){
-                console.log(action.isSelect)
                 return {
                     ...state,
-                selectedCount: state.selectedCount + 1
+                selectedCount: state.selectedCount + 1,
+                
                 }
             }
             else {
-                console.log(action.isSelect)
                 return {
                     ...state,
                 selectedCount: state.selectedCount - 1

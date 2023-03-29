@@ -5,8 +5,7 @@ import Card from '../components/Card';
 
 import axios from "axios";
 
-const Home = (props) => {
-console.log(props)
+const Home = () => {
   const [data, setData] = useState([])
 
  useEffect(()=>{
